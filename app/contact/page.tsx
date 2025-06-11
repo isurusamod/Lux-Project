@@ -13,12 +13,17 @@ export default function Component() {
       <header className="border-b bg-white/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <Sparkles className="h-8 w-8 text-rose-600" />
             <Link href="/">
-  <span className="text-2xl font-bold text-gray-900 cursor-pointer">LUX</span>
-</Link>
+              <Image
+                src="/assets/lux.png"
+                alt="LUX Logo"
+                width={100}
+                height={100}
+                className="rounded-full cursor-pointer"
+              />
+            </Link>
           </div>
-         <nav className="hidden md:flex items-center space-x-8 justify-center">
+          <nav className="hidden md:flex items-center space-x-8 justify-center">
             <Link href="#products" className="text-gray-700 hover:text-rose-600 transition-colors">
               Products
             </Link>
@@ -35,44 +40,38 @@ export default function Component() {
               Contact
             </Link>
           </nav>
-          
+
         </div>
       </header>
 
       {/* Hero Section */}
       <section className="py-20 px-4">
         <div className="container mx-auto text-center">
-          <Badge className="mb-6 bg-rose-100 text-rose-800 hover:bg-rose-100">Premium Luxury Skincare</Badge>
-          <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6">
-            Indulge in
-            <span className="text-rose-600 block">Pure Luxury</span>
-          </h1>
-          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Experience the ultimate in skincare luxury with our handcrafted soap bars. Made with the finest natural
-            ingredients for skin that feels silky smooth.
-          </p>
+
+
+
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-rose-600 hover:bg-rose-700 text-lg px-8 py-4">
-              Discover Collection
-            </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8 py-4">
-              Learn More
-            </Button>
+
+
           </div>
           <div className="mt-16">
-            <Image
-              src="/placeholder.svg?height=400&width=600"
-              alt="Luxury Lux soap bars arranged elegantly"
-              width={600}
-              height={400}
-              className="mx-auto rounded-2xl shadow-2xl"
-            />
+
+
+            <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover z-0">
+              <source src="/Ingredient Asset- Gardenia.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <br></br><br></br><br></br><br></br><br></br><br></br>
+            <br></br><br></br><br></br><br></br><br></br><br></br>
+
           </div>
         </div>
       </section>
 
       {/* Features Section */}
       <section className="py-20 bg-white">
+
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Choose Lux?</h2>
@@ -104,118 +103,7 @@ export default function Component() {
         </div>
       </section>
 
-      {/* Product Showcase */}
-      <section id="products" className="py-20 bg-gradient-to-r from-rose-50 to-purple-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Signature Collection</h2>
-            <p className="text-xl text-gray-600">Discover your perfect match</p>
-          </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card className="overflow-hidden hover:shadow-xl transition-shadow">
-              <div className="aspect-square bg-gradient-to-br from-rose-200 to-rose-300 relative">
-                <Image
-                  src="/placeholder.svg?height=300&width=300"
-                  alt="Rose Petal Luxury Bar"
-                  width={300}
-                  height={300}
-                  className="object-cover w-full h-full"
-                />
-              </div>
-              <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Rose Petal Luxury</h3>
-                <p className="text-gray-600 mb-4">
-                  Infused with real rose petals and essential oils for ultimate hydration
-                </p>
-                <div className="flex items-center justify-between">
-                  <span className="text-2xl font-bold text-rose-600">$24.99</span>
-                  <div className="flex items-center">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                    ))}
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-            <Card className="overflow-hidden hover:shadow-xl transition-shadow">
-              <div className="aspect-square bg-gradient-to-br from-purple-200 to-purple-300 relative">
-                <Image
-                  src="/placeholder.svg?height=300&width=300"
-                  alt="Lavender Dreams Bar"
-                  width={300}
-                  height={300}
-                  className="object-cover w-full h-full"
-                />
-              </div>
-              <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Lavender Dreams</h3>
-                <p className="text-gray-600 mb-4">Calming lavender scent with moisturizing shea butter</p>
-                <div className="flex items-center justify-between">
-                  <span className="text-2xl font-bold text-purple-600">$22.99</span>
-                  <div className="flex items-center">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                    ))}
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-            <Card className="overflow-hidden hover:shadow-xl transition-shadow">
-              <div className="aspect-square bg-gradient-to-br from-green-200 to-green-300 relative">
-                <Image
-                  src="/placeholder.svg?height=300&width=300"
-                  alt="Eucalyptus Fresh Bar"
-                  width={300}
-                  height={300}
-                  className="object-cover w-full h-full"
-                />
-              </div>
-              <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Eucalyptus Fresh</h3>
-                <p className="text-gray-600 mb-4">Refreshing eucalyptus with natural exfoliating properties</p>
-                <div className="flex items-center justify-between">
-                  <span className="text-2xl font-bold text-green-600">$26.99</span>
-                  <div className="flex items-center">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                    ))}
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
 
-      {/* About Section */}
-      <section id="about" className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-4xl font-bold text-gray-900 mb-6">Crafted with Passion</h2>
-              <p className="text-lg text-gray-600 mb-6">
-                For over three decades, Lux has been synonymous with luxury skincare. Our master craftsmen hand-select
-                the finest ingredients from around the world to create soap bars that transform your daily routine into
-                a spa-like experience.
-              </p>
-              <p className="text-lg text-gray-600 mb-8">
-                Each bar is carefully crafted in small batches, ensuring the highest quality and attention to detail. We
-                believe that luxury should be accessible, and that every moment of self-care should feel extraordinary.
-              </p>
-              <Button className="bg-rose-600 hover:bg-rose-700">Our Story</Button>
-            </div>
-            <div className="relative">
-              <Image
-                src="/placeholder.svg?height=500&width=500"
-                alt="Artisan crafting luxury soap"
-                width={500}
-                height={500}
-                className="rounded-2xl shadow-xl"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Testimonials */}
       <section className="py-20 bg-gray-50">

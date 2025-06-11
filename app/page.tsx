@@ -28,8 +28,15 @@ export default function Component() {
       <header className="border-b bg-white/80 backdrop-blur-sm sticky top-0 z-50 justify-center">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between justify-center">
           <div className="flex items-center space-x-2">
-            <Sparkles className="h-8 w-8 text-rose-600" />
-            <span className="text-2xl font-bold text-gray-900">LUX</span>
+            <Link href="/">
+              <Image
+                src="/assets/lux.png"
+                alt="LUX Logo"
+                width={100}
+                height={100}
+                className="rounded-full cursor-pointer"
+              />
+            </Link>
           </div>
           <nav className="hidden md:flex items-center space-x-8 justify-center">
             <Link href="#products" className="text-gray-700 hover:text-rose-600 transition-colors">
@@ -94,17 +101,16 @@ export default function Component() {
             </div>
             <div className="relative">
               <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 border border-white/20">
-                <Image
-                  src="/placeholder.svg?height=400&width=400"
-                  alt="Luxury Lux soap collection"
-                  width={400}
-                  height={400}
-                  className="mx-auto rounded-2xl shadow-2xl"
-                />
-                <div className="mt-6 text-center">
+              <Image
+        src="/assets/rose.jpg"
+        alt="Rose"
+        width={400}
+        height={400}
+        className="rounded-2xl shadow-xl mx-auto"
+      />     <div className="mt-6 text-center">
                   <Badge className="bg-rose-600 text-white mb-2">Limited Edition</Badge>
                   <h3 className="text-xl font-bold text-white mb-2">Rose Garden Collection</h3>
-                  <p className="text-white/80">Starting at $24.99</p>
+                  <p className="text-white/80">Starting at lkr24.99</p>
                 </div>
               </div>
             </div>
@@ -144,7 +150,7 @@ export default function Component() {
               <div className="space-y-4">
                 <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/20">
                   <Image
-                    src="/placeholder.svg?height=200&width=200"
+                   src="/assets/rose2.jpg"
                     alt="Customer moment 1"
                     width={200}
                     height={200}
@@ -154,7 +160,7 @@ export default function Component() {
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/20">
                   <Image
-                    src="/placeholder.svg?height=200&width=200"
+                       src="/assets/rose3.jpg"
                     alt="Customer moment 2"
                     width={200}
                     height={200}
@@ -166,7 +172,7 @@ export default function Component() {
               <div className="space-y-4 mt-8">
                 <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/20">
                   <Image
-                    src="/placeholder.svg?height=200&width=200"
+                       src="/assets/rose4.jpg"
                     alt="Customer moment 3"
                     width={200}
                     height={200}
@@ -176,7 +182,7 @@ export default function Component() {
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/20">
                   <Image
-                    src="/placeholder.svg?height=200&width=200"
+                      src="/assets/rose5.jpg"
                     alt="Customer moment 4"
                     width={200}
                     height={200}
@@ -209,7 +215,7 @@ export default function Component() {
             <Card className="overflow-hidden border-0 shadow-xl hover:shadow-2xl transition-all duration-300 group cursor-pointer">
               <div className="aspect-square bg-gradient-to-br from-rose-200 to-rose-400 relative overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=400&width=400"
+                  src="/assets/rose6.jpg"
                   alt="Rose Petal Luxury Bar"
                   width={400}
                   height={400}
@@ -250,7 +256,7 @@ export default function Component() {
             <Card className="overflow-hidden border-0 shadow-xl hover:shadow-2xl transition-all duration-300 group cursor-pointer">
               <div className="aspect-square bg-gradient-to-br from-purple-200 to-purple-400 relative overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=400&width=400"
+                 src="/assets/rose7.jpg"
                   alt="Lavender Dreams Bar"
                   width={400}
                   height={400}
@@ -291,7 +297,7 @@ export default function Component() {
             <Card className="overflow-hidden border-0 shadow-xl hover:shadow-2xl transition-all duration-300 group cursor-pointer">
               <div className="aspect-square bg-gradient-to-br from-green-200 to-green-400 relative overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=400&width=400"
+                src="/assets/rose9.jpg"
                   alt="Eucalyptus Fresh Bar"
                   width={400}
                   height={400}

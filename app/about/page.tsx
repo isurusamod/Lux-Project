@@ -13,12 +13,17 @@ export default function AboutPage() {
       <header className="border-b bg-white/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <Sparkles className="h-8 w-8 text-rose-600" />
-          <Link href="/">
-  <span className="text-2xl font-bold text-gray-900 cursor-pointer">LUX</span>
-</Link>
+            <Link href="/">
+              <Image
+                src="/assets/lux.png"
+                alt="LUX Logo"
+                width={100}
+                height={100}
+                className="rounded-full cursor-pointer"
+              />
+            </Link>
           </div>
-         <nav className="hidden md:flex items-center space-x-8 justify-center">
+          <nav className="hidden md:flex items-center space-x-8 justify-center">
             <Link href="#products" className="text-gray-700 hover:text-rose-600 transition-colors">
               Products
             </Link>
@@ -88,7 +93,7 @@ export default function AboutPage() {
             </div>
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=600&width=500"
+                src="/assets/rose8.jpg"
                 alt="Elena Rodriguez, founder of Lux Soap"
                 width={500}
                 height={600}

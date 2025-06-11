@@ -12,11 +12,16 @@ export default function NewsPage() {
       {/* Header */}
       <header className="border-b bg-white/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <Sparkles className="h-8 w-8 text-rose-600" />
-         <Link href="/">
-  <span className="text-2xl font-bold text-gray-900 cursor-pointer">LUX</span>
-</Link>
+           <div className="flex items-center space-x-2">
+            <Link href="/">
+              <Image
+                src="/assets/lux.png"
+                alt="LUX Logo"
+                width={100}
+                height={100}
+                className="rounded-full cursor-pointer"
+              />
+            </Link>
           </div>
            <nav className="hidden md:flex items-center space-x-8 justify-center">
             <Link href="#products" className="text-gray-700 hover:text-rose-600 transition-colors">
@@ -68,7 +73,7 @@ export default function NewsPage() {
             <div className="grid lg:grid-cols-2 gap-0">
               <div className="relative aspect-[4/3] lg:aspect-auto">
                 <Image
-                  src="/placeholder.svg?height=500&width=600"
+                  src="/assets/rose9.jpg"
                   alt="Sustainable soap making process"
                   width={600}
                   height={500}
@@ -189,7 +194,7 @@ export default function NewsPage() {
             <Card className="overflow-hidden border-0 shadow-lg hover:shadow-xl transition-shadow">
               <div className="aspect-[4/3] relative">
                 <Image
-                  src="/placeholder.svg?height=250&width=350"
+                   src="/assets/rose2.jpg"
                   alt="New Rose Collection"
                   width={350}
                   height={250}
@@ -233,7 +238,7 @@ export default function NewsPage() {
             <Card className="overflow-hidden border-0 shadow-lg hover:shadow-xl transition-shadow">
               <div className="aspect-[4/3] relative">
                 <Image
-                  src="/placeholder.svg?height=250&width=350"
+                   src="/assets/rose3.jpg"
                   alt="Skincare routine"
                   width={350}
                   height={250}
@@ -273,55 +278,12 @@ export default function NewsPage() {
               </CardContent>
             </Card>
 
-            {/* Article 3 */}
-            <Card className="overflow-hidden border-0 shadow-lg hover:shadow-xl transition-shadow">
-              <div className="aspect-[4/3] relative">
-                <Image
-                  src="/placeholder.svg?height=250&width=350"
-                  alt="Artisan soap making"
-                  width={350}
-                  height={250}
-                  className="object-cover w-full h-full"
-                />
-                <Badge className="absolute top-3 left-3 bg-blue-600 text-white">Behind the Scenes</Badge>
-              </div>
-              <CardContent className="p-6">
-                <div className="flex items-center gap-4 mb-3 text-sm text-gray-500">
-                  <div className="flex items-center gap-1">
-                    <Calendar className="h-4 w-4" />
-                    <span>Dec 5, 2024</span>
-                  </div>
-                  <div className="flex items-center gap-1">
-                    <Clock className="h-4 w-4" />
-                    <span>6 min read</span>
-                  </div>
-                </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                  Meet Master Craftsman Elena: 20 Years of Soap Artistry
-                </h3>
-                <p className="text-gray-600 mb-4">
-                  Go behind the scenes with Elena Rodriguez, our head soap artisan, as she shares her passion for
-                  creating perfect luxury bars.
-                </p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <Badge variant="outline" className="text-blue-600 border-blue-600">
-                    Behind the Scenes
-                  </Badge>
-                  <Badge variant="outline" className="text-orange-600 border-orange-600">
-                    Craftsmanship
-                  </Badge>
-                </div>
-                <Button variant="ghost" className="text-rose-600 hover:text-rose-700 p-0">
-                  Read More <ArrowRight className="h-4 w-4 ml-1" />
-                </Button>
-              </CardContent>
-            </Card>
 
-            {/* Article 4 */}
+            {/* Article  */}
             <Card className="overflow-hidden border-0 shadow-lg hover:shadow-xl transition-shadow">
               <div className="aspect-[4/3] relative">
                 <Image
-                  src="/placeholder.svg?height=250&width=350"
+                  src="/assets/rose6.jpg"
                   alt="Sustainable packaging"
                   width={350}
                   height={250}
@@ -365,7 +327,7 @@ export default function NewsPage() {
             <Card className="overflow-hidden border-0 shadow-lg hover:shadow-xl transition-shadow">
               <div className="aspect-[4/3] relative">
                 <Image
-                  src="/placeholder.svg?height=250&width=350"
+                   src="/assets/rose4.jpg"
                   alt="Ingredient sourcing"
                   width={350}
                   height={250}
@@ -409,7 +371,7 @@ export default function NewsPage() {
             <Card className="overflow-hidden border-0 shadow-lg hover:shadow-xl transition-shadow">
               <div className="aspect-[4/3] relative">
                 <Image
-                  src="/placeholder.svg?height=250&width=350"
+                    src="/assets/rose9.jpg"
                   alt="Awards ceremony"
                   width={350}
                   height={250}
